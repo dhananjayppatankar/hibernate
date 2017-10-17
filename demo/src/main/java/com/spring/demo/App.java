@@ -1,5 +1,9 @@
 package com.spring.demo;
 
+import java.util.List;
+
+import javax.persistence.Query;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -33,10 +37,16 @@ public class App
     	Transaction tr = session.beginTransaction();
     	
     	//session.save(edetail);
-    	session.save(emp1);
+    	//session.save(emp1);
     	//emp = session.get(Employee.class, 3);
-    
+    	
+    	Query q = session.createQuery("from Employee where esalary>2000.0  ");
+    	List<Employee> employee = q.getResultList();
+    	
+    	System.out.println(employee);
+    		
     	tr.commit();
+    	
     	
     	//System.out.println(emp.toString());
     	

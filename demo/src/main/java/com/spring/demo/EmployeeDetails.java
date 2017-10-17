@@ -1,20 +1,57 @@
 package com.spring.demo;
 
-import javax.persistence.Column;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.Embeddable;
 
+@Embeddable
 public class EmployeeDetails {
 	
 	
-	private int sid;
+	private int empdetailid;
+	//@GeneratedValue(generator="newGenerator")
+	//@GenericGenerator(name="newGenerator", strategy="foreign", parameters= {@Parameter(name="employee" ,value="property")} )
 	
-	@Column(name="saddress")
-	private String saddress;
 	
-	@JoinColumn(name="sid")
-	@OneToOne
-	private Employee emp;
+	private String eaddress;
+	
+
+//	@OneToOne(cascade=CascadeType.ALL)
+//	@JoinColumn(name="eid")
+	//private Employee employee;
+	
+	
+
+	public int getEmpdetailid() {
+		return empdetailid;
+	}
+
+	public void setEmpdetailid(int empdetailid) {
+		this.empdetailid = empdetailid;
+	}
+
+	public String getEaddress() {
+		return eaddress;
+	}
+
+	public void setEaddress(String eaddress) {
+		this.eaddress = eaddress;
+	}
+
+//	public Employee getEmployee() {
+//		return employee;
+//	}
+//
+//	public void setEmployee(Employee employee) {
+//		this.employee = employee;
+//	}
+//
+//	@Override
+//	public String toString() {
+//		return "EmployeeDetails [empdetailid=" + empdetailid + ", eaddress=" + eaddress + ", employee=" + employee + "]";
+//	}
+	
+	
+	
+	
 	
 	
 	

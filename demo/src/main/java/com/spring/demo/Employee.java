@@ -2,12 +2,14 @@ package com.spring.demo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Employee {
 
 	@Id
+	@GeneratedValue
 	private int eid;
 	
 	@Column(name="ename")
@@ -16,7 +18,19 @@ public class Employee {
 	@Column(name="esalary")
 	private double esalary;
 	
+	@Column(name="empdetails")
+	private EmployeeDetails empdetails;
 	
+	
+	
+	
+	
+	public EmployeeDetails getEmpdetails() {
+		return empdetails;
+	}
+	public void setEmpdetails(EmployeeDetails empdetails) {
+		this.empdetails = empdetails;
+	}
 	public int getEid() {
 		return eid;
 	}

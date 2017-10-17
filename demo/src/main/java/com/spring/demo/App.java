@@ -15,25 +15,30 @@ public class App
     {
         
     	
-    	System.out.println("Main method is called for Hubernate");
-    	Employee emp = new Employee();
+    	System.out.println("Main method is called for Hibernate");
+    //	Employee emp = new Employee();
     	Employee emp1 = new Employee();
+    	EmployeeDetails edetail = new EmployeeDetails();
     	
-//    	emp1.setEid(3);
-//    	emp1.setEname("Dhananjay -2");
-//    	emp1.setEsalary(1100.90);
+    	emp1.setEid(6);
+    	emp1.setEname("Dhananjay -16");
+    	emp1.setEsalary(6800.90);
+    	edetail.setEaddress("4906 Tolland Street");
+    	edetail.setEmpdetailid(5);
+    	emp1.setEmpdetails(edetail);
     	
     	Configuration  config = new Configuration().configure().addAnnotatedClass(Employee.class);
     	SessionFactory sf = config.buildSessionFactory();
     	Session session = sf.openSession();
     	Transaction tr = session.beginTransaction();
     	
-    	//session.save(emp1);
-    	emp = session.get(Employee.class, 3);
+    	//session.save(edetail);
+    	session.save(emp1);
+    	//emp = session.get(Employee.class, 3);
     
     	tr.commit();
     	
-    	System.out.println(emp.toString());
+    	//System.out.println(emp.toString());
     	
     	
     	

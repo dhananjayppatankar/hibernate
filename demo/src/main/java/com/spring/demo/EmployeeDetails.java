@@ -24,6 +24,11 @@ public class EmployeeDetails {
 		return empdetailid;
 	}
 
+	@Override
+	public String toString() {
+		return "EmployeeDetails [empdetailid=" + empdetailid + ", eaddress=" + eaddress + "]";
+	}
+
 	public void setEmpdetailid(int empdetailid) {
 		this.empdetailid = empdetailid;
 	}

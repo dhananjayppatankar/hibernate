@@ -7,19 +7,17 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="studentHibernate")
+@Table(name = "studentHibernate")
 public class Student {
-	
+
 	@Id
 	@GeneratedValue
 	private int sid;
 	private String sname;
-	
+
 	@OneToOne
 	private Laptop laptop;
 
-	
-	
 	public int getSid() {
 		return sid;
 	}
@@ -43,10 +41,12 @@ public class Student {
 	public void setLaptop(Laptop laptop) {
 		this.laptop = laptop;
 	}
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Student [sid=" + sid + ", sname=" + sname + ", laptop=" + laptop + "]";
+	}
+
 	
 	
 }

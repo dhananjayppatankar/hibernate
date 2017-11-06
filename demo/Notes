@@ -1,0 +1,212 @@
+		list.add(new Questions(2,"Which is a reserved word in the Java programming language?\r\n" + 
+				"A. 	method\r\n" + 
+				"B. 	native\r\n" + 
+				"C. 	subclasses\r\n" + 
+				"D. 	reference\r\n" + 
+				"E. 	array",10,1));
+		list.add(new Questions(3,"Which is a valid keyword in java?\r\n" + 
+				"	A. 	interface\r\n" + 
+				"	B. 	string\r\n" + 
+				"	C. 	Float\r\n" + 
+				"	D. 	unsigned",10,1));
+		list.add(new Questions(4,"Which three are legal array declarations?\r\n" + 
+				"\r\n" + 
+				"    int [] myScores [];\r\n" + 
+				"    char [] myChars;\r\n" + 
+				"    int [6] myScores;\r\n" + 
+				"    Dog myDogs [];\r\n" + 
+				"    Dog myDogs [7];\r\n" + 
+				"",10,1));
+		list.add(new Questions(5,"Which is the valid declarations within an interface definition?\r\n" + 
+				"A. 	public double methoda();\r\n" + 
+				"B. 	public final double methoda();\r\n" + 
+				"C. 	static void methoda(double d1);\r\n" + 
+				"D. 	protected void methoda(double d1);",10,1));
+		list.add(new Questions(6,"You want subclasses in any package to have access to members of a superclass. Which is the most restrictive access that accomplishes this objective?\r\n" + 
+				"A. 	public\r\n" + 
+				"B. 	private\r\n" + 
+				"C. 	protected\r\n" + 
+				"D. 	transient",15,2));
+		list.add(new Questions(7,"public class Test { }\r\n" + 
+				"\r\n" + 
+				"What is the prototype of the default constructor?\r\n" + 
+				"\r\n" + 
+				"A. 	Test( )\r\n" + 
+				"B. 	Test(void)\r\n" + 
+				"C. 	public Test( )\r\n" + 
+				"D. 	public Test(void)",15,2));
+		list.add(new Questions(8," 	\r\n" + 
+				"\r\n" + 
+				"What is the most restrictive access modifier that will allow members of one class to have access to members of another class in the same package?\r\n" + 
+				"A. 	public\r\n" + 
+				"B. 	abstract\r\n" + 
+				"C. 	protected\r\n" + 
+				"D. 	synchronized\r\n" + 
+				"E. 	default access",15,2));
+		list.add(new Questions(9," 	\r\n" + 
+				"\r\n" + 
+				"Which of the following is/are legal method declarations?\r\n" + 
+				"\r\n" + 
+				"    protected abstract void m1();\r\n" + 
+				"    static final void m1(){}\r\n" + 
+				"    synchronized public final void m1() {}\r\n" + 
+				"    private native void m1();\r\n" + 
+				"",15,2));
+				
+				
+		list.add(new Questions(10,"Which cause a compiler error?\r\n" + 
+				"A. int[ ] scores = {3, 5, 7};\r\n" + 
+				"B. int [ ][ ] scores = {2,7,6}, {9,3,45};\r\n" + 
+				"C. String cats[ ] = {\"Fluffy\", \"Spot\", \"Zeus\"};\r\n" + 
+				"D. boolean results[ ] = new boolean [] {true, false, true};\r\n" + 
+				"E. Integer results[ ] = {new Integer(3), new Integer(5), new Integer(8)};",15,2));
+				
+		list.add(new Questions(11," 	\r\n" + "\r\n" +"Which three are valid method signatures in an interface?\r\n" + 
+				"\r\n" + 
+				"    private int getArea();\r\n" + 
+				"    public float getVol(float x);\r\n" + 
+				"    public void main(String [] args);\r\n" + 
+				"    public static void main(String [] args);\r\n" + 
+				"    boolean setFlag(Boolean [] test);\r\n" + 
+				"\r\n" + 
+				"A. 	1 and 2\r\n" + 
+				"B. 	2, 3 and 5\r\n" + 
+				"C. 	3, 4, and 5\r\n" + 
+				"D. 	2 and 4",20,3));
+		list.add(new Questions(12,"You want a class to have access to members of another class in the same package. Which is the most restrictive access that accomplishes this objective?\r\n" + 
+				"A. 	public\r\n" + 
+				"B. 	private\r\n" + 
+				"C. 	protected\r\n" + 
+				"D. 	default access",20,3));
+		list.add(new Questions(13,"Which two of the following are legal declarations for nonnested classes and interfaces?\r\n" + 
+				"\r\n" + 
+				"    final abstract class Test {}\r\n" + 
+				"    public static interface Test {}\r\n" + 
+				"    final public class Test {}\r\n" + 
+				"    protected abstract class Test {}\r\n" + 
+				"    protected interface Test {}\r\n" + 
+				"    abstract public class Test {}\r\n" + 
+				"\r\n" + 
+				"A. 	1 and 4\r\n" + 
+				"B. 	2 and 5\r\n" + 
+				"C. 	3 and 6\r\n" + 
+				"D. 	4 and 6",20,3));
+		list.add(new Questions(14,"\r\n" + 
+				"\r\n" + 
+				"Which of the following class level (nonlocal) variable declarations will not compile?\r\n" + 
+				"A. 	protected int a;\r\n" + 
+				"B. 	transient int b = 3;\r\n" + 
+				"C. 	private synchronized int e;\r\n" + 
+				"D. 	volatile int d;",20,3));
+		list.add(new Questions(15," 	\r\n" + 
+				"\r\n" + 
+				"Given a method in a protected class, what access modifier do you use to restrict access to that method to only the other members of the same class?\r\n" + 
+				"A. 	final\r\n" + 
+				"B. 	static\r\n" + 
+				"C. 	private\r\n" + 
+				"D. 	protected\r\n" + 
+				"E. 	volatile",20,3));
+		list.add(new Questions(16," 	\r\n" + 
+				"\r\n" + 
+				"Which is a valid declaration within an interface?\r\n" + 
+				"A. 	public static short stop = 23;\r\n" + 
+				"B. 	protected short stop = 23;\r\n" + 
+				"C. 	transient short stop = 23;\r\n" + 
+				"D. 	final void madness(short stop);",25,4));
+		list.add(new Questions(17," 	\r\n" + 
+				"\r\n" + 
+				"What is the name of the method used to start a thread execution?\r\n" + 
+				"A. 	init();\r\n" + 
+				"B. 	start();\r\n" + 
+				"C. 	run();\r\n" + 
+				"D. 	resume();",25,4));
+		list.add(new Questions(18," 	\r\n" + 
+				"\r\n" + 
+				"Which two are valid constructors for Thread?\r\n" + 
+				"\r\n" + 
+				"    Thread(Runnable r, String name)\r\n" + 
+				"    Thread()\r\n" + 
+				"    Thread(int priority)\r\n" + 
+				"    Thread(Runnable r, ThreadGroup g)\r\n" + 
+				"    Thread(Runnable r, int priority)\r\n" + 
+				"\r\n" + 
+				"A. 	1 and 3\r\n" + 
+				"B. 	2 and 4\r\n" + 
+				"C. 	1 and 2\r\n" + 
+				"D. 	2 and 5",25,4));
+		list.add(new Questions(19," 	\r\n" + 
+				"\r\n" + 
+				"Which three are methods of the Object class?\r\n" + 
+				"\r\n" + 
+				"    notify();\r\n" + 
+				"    notifyAll();\r\n" + 
+				"    isInterrupted();\r\n" + 
+				"    synchronized();\r\n" + 
+				"    interrupt();\r\n" + 
+				"    wait(long msecs);\r\n" + 
+				"    sleep(long msecs);\r\n" + 
+				"    yield();\r\n" + 
+				"\r\n" + 
+				"A. 	1, 2, 4\r\n" + 
+				"B. 	2, 4, 5\r\n" + 
+				"C. 	1, 2, 6\r\n" + 
+				"D. 	2, 3, 4",25,4));
+				list.add(new Questions(20,"Which cannot directly cause a thread to stop executing?\r\n" + 
+				"A. 	Calling the SetPriority() method on a Thread object.\r\n" + 
+				"B. 	Calling the wait() method on an object.\r\n" + 
+				"C. 	Calling notify() method on an object.\r\n" + 
+				"D. 	Calling read() method on an InputStream object.",25,4));
+		
+		for (Questions questions : list) {
+			session.save(questions);
+		}
+******************************************************************
+
+// Employee emp = new Employee();
+// Employee emp1 = new Employee();
+// EmployeeDetails edetail = new EmployeeDetails();
+
+// emp1.setEid(6);
+// emp1.setEname("Dhananjay -16");
+// emp1.setEsalary(6800.90);
+// edetail.setEaddress("4906 Tolland Street");
+// edetail.setEmpdetailid(5);
+// emp1.setEmpdetails(edetail);
+// session.save(student1);
+// session.save(laptop1);
+// session.save(laptop2);
+// session.save(student1);
+// session.save(edetail);
+// session.save(emp1);
+// emp = session.get(Employee.class, 3);
+
+// Query q = session.createQuery("from Employee");
+// List<Employee> employee = q.getResultList();
+//
+// for (Employee employee2 : employee) {
+// System.out.println( employee2.getEmpdetails());
+// }
+//
+//
+//
+// System.out.println(employee);
+// Student student1 = new Student();
+// Laptop laptop1 = new Laptop();
+// laptop1.setLid(1);
+// laptop1.setLmodel("Dell");
+// Laptop laptop2 = new Laptop();
+// laptop2.setLid(4);
+// laptop2.setLmodel("Dell4");
+//
+// student1.setSid(1);
+// student1.setSname("Dhananjay Patankar Prakash 1");
+// student1.setLaptop(laptop2);
+// List<Integer> lids = Arrays.asList(1,2,3);
+//
+// Query q = session.createQuery("from Laptop where lid in :lids");
+// q.setParameter("lids", lids);
+// List<Laptop> laps = q.getResultList();
+// for(Laptop lap : laps) {
+// System.out.println(lap);
+// }
+		

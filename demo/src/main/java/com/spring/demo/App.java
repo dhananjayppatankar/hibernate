@@ -1,9 +1,5 @@
 package com.spring.demo;
 
-import java.util.List;
-
-import javax.persistence.Query;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -18,23 +14,31 @@ public class App {
 
 		System.out.println("Main method is called for Hibernate");
 
-
-
-		Configuration config = new Configuration().configure().addAnnotatedClass(Student.class)
-				.addAnnotatedClass(Laptop.class);
+		Configuration config = new Configuration().configure().addAnnotatedClass(Questions.class);
 		SessionFactory sf = config.buildSessionFactory();
 		Session session = sf.openSession();
 		Transaction tr = session.beginTransaction();
 
-		Query q = session.createQuery("select lmodel from Laptop where length(lmodel)>4");
-		List<String> laps = q.getResultList();
-		for(String lap : laps) {
-			System.out.println(lap);
-		}
+		
+//		Questions q1 = new Questions();
+//		q1.setQid(1);
+//		q1.setMarks(10);
+//		q1.setQuestion("Which will legally declare, construct, and initialize an array?\r\n" + 
+//				"A. 	int [] myList = {\"1\", \"2\", \"3\"}\r\n" + 
+//				"B. 	int [] myList = (5, 8, 2);\r\n" + 
+//				"C. 	int myList [] [] = {4,9,7,0};\r\n" + 
+//				"D. 	int myList [] = {4, 3, 7};");
+//		
+//		session.save(q1);
+		
+		
+		Questions q = session.get(Questions.class, 1);
+		System.out.println(q);
 		
 		
 		
-
+		
+		
 		tr.commit();
 
 	}
@@ -68,14 +72,22 @@ public class App {
 //
 //
 // System.out.println(employee);
-//Student student1 = new Student();
-//Laptop laptop1 = new Laptop();
-//laptop1.setLid(1);
-//laptop1.setLmodel("Dell");
-//Laptop laptop2 = new Laptop();
-//laptop2.setLid(4);
-//laptop2.setLmodel("Dell4");
+// Student student1 = new Student();
+// Laptop laptop1 = new Laptop();
+// laptop1.setLid(1);
+// laptop1.setLmodel("Dell");
+// Laptop laptop2 = new Laptop();
+// laptop2.setLid(4);
+// laptop2.setLmodel("Dell4");
 //
-//student1.setSid(1);
-//student1.setSname("Dhananjay Patankar Prakash 1");
-//student1.setLaptop(laptop2);
+// student1.setSid(1);
+// student1.setSname("Dhananjay Patankar Prakash 1");
+// student1.setLaptop(laptop2);
+// List<Integer> lids = Arrays.asList(1,2,3);
+//
+// Query q = session.createQuery("from Laptop where lid in :lids");
+// q.setParameter("lids", lids);
+// List<Laptop> laps = q.getResultList();
+// for(Laptop lap : laps) {
+// System.out.println(lap);
+// }
